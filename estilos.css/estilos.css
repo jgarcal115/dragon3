@@ -1,0 +1,161 @@
+body {
+    margin-top: auto;margin-left: 100px; margin-right: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main {
+    background-image: url(images/tile.jpeg);margin-left: 7.5%;
+}
+h1{color: rgb(22, 22, 2);text-align: center;font-family: "DragonFire";}
+article{color: beige;margin-left: 7%;margin-right: 7%;line-height: 150%;font-family: "san_frediano_regular.ttf";font-size: 20px;}
+section{margin-left: auto; margin-right: auto; text-align: center;}
+header{text-align: center; width: 20%;}
+.grid-container {
+
+display: grid; grid-template-rows: auto;
+grid-template-columns: 25% auto auto auto;
+gap: 0px;
+background-color: rgba(255, 255, 255, 0.8);
+padding: 0px;
+}
+
+.grid-container > div {
+background-color: rgba(255, 255, 255, 0.8);
+text-align: center;
+padding: 10%;
+font-size: 20px;
+
+}
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+
+
+
+.topnav {
+    overflow: hidden;
+    background-color: #9c117e;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #9c117e;
+    color:#f1ebf0 ;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+
+section {align-items: center;}
+article{text-align: var(100px);margin-left: 7%;margin-right: 7%;line-height: 150%;}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+footer {
+text-align: center;
+padding: 3px;
+color: white;
+}
